@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* 공통 */
+#wrap{padding: 55px 20px;}
+main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid #a7a7a7;}
+.mb-20{margin-bottom: 20px!important;}
+.mb-30{margin-bottom: 30px!important;}
+.mb-40{margin-bottom: 40px!important;}
+.mb-50{margin-bottom: 50px!important;}
+.mt-30{margin-top: 30px!important;}
+.mt-20{margin-top: 20px!important;}
+
+.w-50 { width: 50%; }
+.w-33 { width: 33.3333%; }
+.w-25 { width: 25%; }
+.w-20 { width: 20%; }
+.w-16 { width: 16.6667%; }
+
+/* 공통 - 가운데영역 */
+.container{max-width: 750px; margin: 0 auto; padding: 0 60px;}
+
+/* 공통 - 버튼 */
+.btnBox{display: flex; justify-content: center;}
+.btnBox .btn{width: 190px; height: 60px; line-height: 60px;  background-color: #000; border-radius: 50px; text-align: center;}
+.btnBox .btn span{padding-right: 22px; position: relative; font-size: 23px; font-weight: 500; color: #fff;}
+.btnBox .btn span::after{content: ''; width: 9px; height: 14px; position: absolute; top:8px; right:0; background: url(../images/common/arrow_icon.png)no-repeat center; background-size: contain;}
+
+@media (max-width: 767px){
+
+  .container{padding: 0 30px;}
+
+  main{padding-bottom: 40px;}
+
+  .btnBox .btn{width: 160px; height: 50px; line-height: 50px;}
+  .btnBox .btn span{font-size: 16px;}
+  .btnBox .btn span::after{top: 5px; width: 7px; height: 12px;}
+
+  .w-50, .w-33, .w-25, .w-20, .w-16{width: 100%}
+  
+}
+
+@media (max-width: 480px){
+
+  .container{padding: 0 20px;}
+
+}
+
+/* 안내문구 영역 */
+.topTitleWrap{margin-bottom: 25px;}
+.topTitleWrap .text01{position: relative; padding-left: 30px; font-size: 27px; font-weight: 500; color: #000;}
+.topTitleWrap .text01::before{content: ''; width: 23px; height: 21px; position: absolute; top:8px; left:0; background: url(../images/common/icon01.png) no-repeat center; background-size: contain;}
+.topTitleWrap .text02{margin: 10px 0; color: #000; font-size: 18px; letter-spacing: -1px; font-weight: 600;}
+.topTitleWrap .color{color: #cd0c45;}
+
+@media (max-width: 1199px){
+
+  .topTitleWrap .text02{font-size: 16px;}
+  .topTitleWrap .text01{font-size: 24px;}
+  .topTitleWrap .text01::before{width: 20px; height: 18px;}
+
+}
+
+@media (max-width: 767px){
+
+  .topTitleWrap{margin-bottom: 15px;}
+  .topTitleWrap .text01{padding-left: 26px; font-size: 20px;}
+  .topTitleWrap .text01::before{top: 6px; width: 18px; height: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+  .topTitleWrap .text01{padding-left: 22px; font-size: 16px;}
+  .topTitleWrap .text01::before{top: 3px; width: 16px; height: 14px;}
+
+}
+
+/* 공통 - 폼 */
+.inputChkBox label{position: relative; padding-left: 24px; font-size: 18px; font-weight: 600; color: #000; cursor: pointer;}
+.inputChkBox label::before{content: ''; position: absolute; top:3px; left:0; width: 13px; height: 13px; border: 1px solid #8e8e8e;}
+.inputChkBox input:checked + label::before{content: '\2714'; width: 15px; height: 15px; font-size: 12px; line-height: 16px; text-align: center; color: #fff; background-color: #cd0c45; border: 0; font-weight: 300;}
+.inputTextBox{width: 100%;}
+.inputTextBox input{ padding-left: 10px; width: 100%; height: 38px; border: 1px solid #b3b4b4; border-radius: 3px; font-weight: 500;}
+.inputTextBox input::placeholder{color: #b3b4b4;}
+
+@media (max-width: 1199px){
+
+  .inputChkBox label{font-size: 16px;}
+  .inputChkBox label::before{top: 2px;}
+
+}
+
+@media (max-width: 480px){
+
+  .inputTextBox input{height: 30px;}
+
+}
+
+/* 상단 제목 영역 */
+#titleWrap{margin-bottom: 21px; padding-top: 30px; position: relative; height: 333px;}
+#titleWrap::after{content: ''; width: 407px; height: 334px; position: absolute; top:-1px; right:-1px; background: url(../images/common/bg.png)no-repeat; z-index: -1; background-size: contain;}
+#titleWrap p{font-size: 39px; font-weight: 800; color: #000; line-height: 1.3;}
+#titleWrap p span{display: block; margin-bottom: 5px; font-weight: 600; font-size: 28px; color: #cd0c45;}
+#titleWrap .logoBox{margin-bottom: 30px;}
+#titleWrap .logoBox h1 a{display: block;}
+#titleWrap .logoBox h1 img{display: block;}
+
+@media (max-width: 1199px){
+
+  #titleWrap p{font-size: 35px;}
+  #titleWrap p span{font-size: 24px;}
+
+}
+
+@media (max-width: 767px){
+
+  #titleWrap{padding: 30px 0; height: auto;}
+  #titleWrap p{font-size: 22px;}
+  #titleWrap p span{font-size: 18px;}
+  #titleWrap::after{width: 255px; height: 208px;}
+
+}
+
+@media (max-width: 480px){
+
+  #titleWrap{padding: 30px 0 10px;}
+  #titleWrap p{font-size: 18px;}
+  #titleWrap p span{font-size: 16px;}
+  #titleWrap::after{width: 215px; height: 175px; opacity: .5;}
+  
+}
+
+/* 폼 영역 */
+#formWrap .formBox{margin-bottom: 10px;}
+#formWrap .formBox .layoutBox{ display: flex; align-items: center; gap: 0 0;}
+#formWrap .formBox:last-child{margin-bottom: 0;}
+#formWrap .formBox .label{position: relative; padding-left: 16px; width: 92px; flex-shrink: 0; font-size: 18px; color: #000;}
+#formWrap .formBox .label::before{content: ''; position: absolute; top:10px; left:0; width: 5px; height: 5px; background-color: #ef4472; border-radius: 50%;}
+#formWrap .formBox .topBox{display: flex; background-color: #eceded;}
+#formWrap .formBox .topBox span{flex-shrink: 0; width: 127px; height: 42px; line-height: 42px; background-color: #000; color: #fff; text-align: center; font-size: 18px;}
+#formWrap .formBox .topBox em{width: 100%; height: 42px; line-height: 42px; padding-left: 25px; color: #000; font-size: 16px;}
+#formWrap .formBox .questionWrap{padding: 23px 0; border-bottom: 1px dashed #999;}
+#formWrap .formBox .questionWrap:last-child{border-bottom: 0;}
+#formWrap .formBox .questionWrap .questionBox{margin-bottom: 10px; display: flex; gap: 0 10px;}
+#formWrap .formBox .questionWrap .questionBox .number{flex-shrink: 0; width: 25px; height: 25px; line-height: 25px; border-radius: 50%; text-align: center; border: 1px solid #ef4573; color: #000;}
+#formWrap .formBox .questionWrap .questionBox p{font-size: 18px; color: #000;}
+#formWrap .formBox .questionWrap .box{padding-left: 35px; display: flex; flex-wrap: wrap; gap: 10px 0; }
+#formWrap .formBox .questionWrap .box .eventBox{display: flex; align-items: center; gap: 0 12px;}
+#formWrap .formBox .questionWrap .box .eventBox .imgBox img{display: block;}
+#formWrap .formBox .questionWrap .box .eventBox .textBox h2{font-size: 20px; color: #cd0c45;}
+#formWrap .formBox .questionWrap .box .eventBox .textBox p{font-size: 18px; color: #000; letter-spacing: -1px;}
+
+@media (max-width: 767px){
+
+  #formWrap .formBox .label{font-size: 16px;}
+  #formWrap .formBox .label::before{top: 8px; width: 4px; height: 4px;}
+  #formWrap .formBox .topBox span,
+  #formWrap .formBox .topBox em{font-size: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+  #formWrap{margin-bottom: 25px;}
+  #formWrap .formBox .questionWrap{padding: 15px 0;}
+  #formWrap .formBox .label{width: 76px; font-size: 14px;}
+  #formWrap .formBox .questionWrap .questionBox p{font-size: 16px;}
+  #formWrap .formBox .questionWrap .questionBox .number{font-size: 14px;}
+  #formWrap .formBox .topBox span,
+  #formWrap .formBox .topBox em{font-size: 14px;}
+  #formWrap .formBox .topBox em{padding-left: 15px;}
+
+}
+
+@media (max-width: 414px){
+
+  #formWrap .formBox .topBox{flex-direction: column;}
+  #formWrap .formBox .topBox span,
+  #formWrap .formBox .topBox em{width: 100%; padding: 0; text-align: center;}
+
+}
+
+/* 안내문구 영역 */
+#infoWrap .infoBox02{padding: 20px 20px 15px!important;}
+#infoWrap .infoBox{padding: 30px 40px; border: 1px solid #ef4472;}
+#infoWrap .agreeBox h2{margin-bottom: 5px; font-size: 21px; color: #cd0c45; font-weight: 600;} 
+#infoWrap .agreeBox p{margin-bottom: 5px; color: #000; font-weight: 600;}
+#infoWrap .infoList > li{margin-bottom: 5px; position: relative; padding-left: 26px; font-size: 18px; font-weight: 600; color: #000; letter-spacing: -1px;}
+#infoWrap .infoList > li:last-child{margin-bottom: 0;}
+#infoWrap .infoList > li::before{content: ''; position: absolute; top:4px; left:0; width: 18px; height: 18px; background: url(../images/common/chk_icon.png)no-repeat center; background-size: contain;}
+#infoWrap .infoList > li .inputChkBox{margin: 5px 0;}
+#infoWrap .infoList > li .inputChkBox label{color: #cd0c45;}
+#infoWrap .infoList > li .inputChkBox label::before{border: 1px solid #cd0c45;}
+
+@media (max-width: 1199px){
+
+  #infoWrap .agreeBox h2{font-size: 18px;}
+  #infoWrap .infoList > li{font-size: 16px;}
+  #infoWrap .infoList > li::before{top: 3px; width: 16px; height: 16px;}
+
+}
+
+@media (max-width: 767px){
+
+  #infoWrap .infoBox{padding: 30px 20px;}
+
+}
+
+@media (max-width: 480px){
+
+  #infoWrap .infoBox{padding: 20px;}
+  #infoWrap .agreeBox h2{font-size: 16px;}
+
+}
