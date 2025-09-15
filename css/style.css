@@ -10,6 +10,7 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
 .mt-30{margin-top: 30px!important;}
 .mt-20{margin-top: 20px!important;}
 
+.w-100 { width: 100%; }
 .w-50 { width: 50%; }
 .w-33 { width: 33.3333%; }
 .w-25 { width: 25%; }
@@ -126,7 +127,7 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
   #titleWrap{padding: 30px 0 10px;}
   #titleWrap p{font-size: 18px;}
   #titleWrap p span{font-size: 16px;}
-  #titleWrap::after{width: 215px; height: 175px; opacity: .5;}
+  #titleWrap::after{width: 215px; height: 175px;}
   
 }
 
