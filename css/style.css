@@ -103,6 +103,7 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
 #titleWrap::after{content: ''; width: 407px; height: 334px; position: absolute; top:-1px; right:-1px; background: url(../images/common/bg.png)no-repeat; z-index: -1; background-size: contain;}
 #titleWrap p{font-size: 39px; font-weight: 800; color: #000; line-height: 1.3;}
 #titleWrap p span{display: block; margin-bottom: 10px; font-weight: 700; font-size: 24px; color: #cd0c45;}
+#titleWrap span br{display: none;}
 #titleWrap .logoBox{margin-bottom: 52px;}
 #titleWrap .logoBox h1 a{display: block;}
 #titleWrap .logoBox h1 img{display: block;}
@@ -120,16 +121,30 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
   #titleWrap p{font-size: 22px;}
   #titleWrap p span{font-size: 18px;}
   #titleWrap::after{width: 255px; height: 208px;}
+  #titleWrap .logoBox{margin-bottom: 30px;}
+
+}
+
+@media (max-width: 576px){
+
+  #titleWrap{margin-bottom: 0;}
+  #titleWrap span br{display: block;}
 
 }
 
 @media (max-width: 480px){
 
-  #titleWrap{padding: 30px 0 10px;}
+  #titleWrap{padding: 30px 0 0; margin-bottom: 20px;}
   #titleWrap p{font-size: 18px;}
   #titleWrap p span{font-size: 16px;}
   #titleWrap::after{width: 215px; height: 175px;}
   
+}
+
+@media (max-width: 375px){
+
+  #titleWrap::after{width: 185px;}
+
 }
 
 /* 폼 영역 */
