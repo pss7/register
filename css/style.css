@@ -121,7 +121,7 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
   #titleWrap p{font-size: 22px;}
   #titleWrap p span{font-size: 18px;}
   #titleWrap::after{width: 255px; height: 208px;}
-  #titleWrap .logoBox{margin-bottom: 30px;}
+  #titleWrap .logoBox{margin-bottom: 18px;}
 
 }
 
@@ -149,7 +149,9 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
 
 /* 폼 영역 */
 #formWrap .formBox{margin-bottom: 10px;}
-#formWrap .formBox .layoutBox{ display: flex; align-items: center; gap: 0 0;}
+#formWrap .formBox .layoutBox{display: flex; align-items: center; gap: 0 0;}
+#formWrap .formBox .formLayoutBox{display: flex; align-items: center; gap: 8px; width: 100%;}
+#formWrap .formBox .formLayoutBox .inputChkBox{flex-shrink: 0;}
 #formWrap .formBox:last-child{margin-bottom: 0;}
 #formWrap .formBox .label{position: relative; padding-left: 16px; width: 92px; flex-shrink: 0; font-size: 18px; color: #000;}
 #formWrap .formBox .label::before{content: ''; position: absolute; top:10px; left:0; width: 5px; height: 5px; background-color: #ef4472; border-radius: 50%;}
@@ -208,6 +210,7 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
   #formWrap .formBox .questionWrap .box .eventBox .textBox h2{font-size: 14px;}
   #formWrap .formBox .questionWrap .box .eventBox .textBox p{font-size: 12px;}
 
+  #formWrap .formBox .formLayoutBox{flex-direction: column; align-items: flex-start;}
 
 }
 
