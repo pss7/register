@@ -169,6 +169,16 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
 #formWrap .formBox .questionWrap .box .eventBox .imgBox img{display: block;}
 #formWrap .formBox .questionWrap .box .eventBox .textBox h2{font-size: 20px; color: #cd0c45;}
 #formWrap .formBox .questionWrap .box .eventBox .textBox p{font-size: 18px; color: #000; letter-spacing: -1px;}
+#formWrap .formBox .customSelectBox{position: relative; width: 100%;}
+#formWrap .formBox .customSelectBox .btn{position: relative; display: block; padding-left: 10px; width: 100%; height: 38px; border: 1px solid #b3b4b4; text-align: left;}
+/* 화살표 */
+#formWrap .formBox .customSelectBox .btn::after{content: ''; position: absolute; top: 50%; right: 12px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
+  border-top: 6px solid #555; transform: translateY(-50%);}
+#formWrap .formBox .customSelectBox .btn.active::after{transform: translateY(-50%) rotate(-180deg);}
+#formWrap .formBox .customSelectBox .btn.active + .selectList{display: block;}
+#formWrap .formBox .customSelectBox .selectList{display: none; padding: 15px 0; position: absolute; top:47px; left:0; right:0; border: 1px solid #b3b4b4; border-radius: 7px; background-color: #fff; z-index: 99;} 
+#formWrap .formBox .customSelectBox .selectList li .selectBtn{display: block; padding: 8px 0 8px 10px; width: 100%; text-align: left;}
+#formWrap .formBox .customSelectBox .selectList li .selectBtn:hover{background: #fbfbfb;}
 
 @media (max-width: 767px){
 
@@ -196,6 +206,8 @@ main{ padding-bottom: 50px; max-width: 750px; margin: 0 auto; border: 1px solid 
   #formWrap .formBox .questionWrap .box .eventBox .imgBox img{width: 60px;}
   #formWrap .formBox .questionWrap .box .eventBox .textBox h2{font-size: 16px;}
   #formWrap .formBox .questionWrap .box .eventBox .textBox p{font-size: 14px;}
+  #formWrap .formBox .customSelectBox .selectList li .selectBtn,
+  #formWrap .formBox .customSelectBox .btn{font-size: 14px;}
 
 }
 
